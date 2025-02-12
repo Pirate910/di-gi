@@ -1,0 +1,40 @@
+@import 'vars';
+@import 'fonts';
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+.container{
+    padding: 0 20px;
+    max-width: 280;
+    margin: 0 auto;
+
+    // padding: 0 20px;
+}
+
+.header{
+    background-color: $accent;
+    &__inner{
+        min-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;   
+    }
+}
+
+.logo{
+    &__link{
+        margin-left: 8px;
+        display: flex;
+    }
+}
